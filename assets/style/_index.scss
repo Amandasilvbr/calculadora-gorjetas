@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: $background-desktop;
+  @include align-center;
+
+  @include devices(tablet) {
+    background-color: $background-tablet;
+  }
+
+  @include devices(mobile) {
+    background-color: $background-mobile;
+  }
+}
+
+#box {
+  background-color: $card-color-desktop;
+  color: hsl(212, 11%, 77%);
+  font-family: outfine, sans-serif;
+  height: 400px;
+  width: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @include align-center;
+  @include devices(tablet) {
+    background-color: $card-color-tablet;
+  }
+
+  @include devices(mobile) {
+    background-color: $card-color-mobile;
+    width: 300px;
+  }
+
+  #box-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0px 20px 0px;
+  }
+
+  form {
+    text-align: center;
+
+    input,
+    select {
+      font-size: 15px;
+      margin: 10px 0px 20px 0px;
+      width: 50%;
+      height: 30px;
+      outline: none;
+      color: rgb(45, 42, 45);
+      text-align: center;
+    }
+
+    button {
+      width: 100px;
+      height: 35px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      color: hsl(212, 11%, 77%);
+      cursor: pointer;
+      @include glass-effect;
+
+      &:hover {
+        background-color: hsl(212, 11%, 77%);
+        color: $card-color-desktop;
+        transition: 1s;
+      }
+    }
+  }
+}

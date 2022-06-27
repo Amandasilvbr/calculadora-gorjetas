@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: hsl(217deg, 53%, 22%);
+  }
+}
+@media only screen and (max-width: 481px) {
+  body {
+    background-color: hsl(217deg, 52%, 42%);
+  }
+}
+
+#box {
+  background-color: hsl(216deg, 50%, 16%);
+  color: hsl(212deg, 11%, 77%);
+  font-family: outfine, sans-serif;
+  height: 400px;
+  width: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  #box {
+    background-color: hsl(216deg, 43%, 29%);
+  }
+}
+@media only screen and (max-width: 481px) {
+  #box {
+    background-color: hsl(216deg, 44%, 46%);
+    width: 300px;
+  }
+}
+#box #box-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 0px 20px 0px;
+}
+#box form {
+  text-align: center;
+}
+#box form input,
+#box form select {
+  font-size: 15px;
+  margin: 10px 0px 20px 0px;
+  width: 50%;
+  height: 30px;
+  outline: none;
+  color: rgb(45, 42, 45);
+  text-align: center;
+}
+#box form button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  color: hsl(212deg, 11%, 77%);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: none;
+}
+#box form button:hover {
+  background-color: hsl(212deg, 11%, 77%);
+  color: hsl(216deg, 50%, 16%);
+  transition: 1s;
+}/*# sourceMappingURL=style.css.map */

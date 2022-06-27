@@ -1,0 +1,43 @@
+// variables
+$background-desktop: hsl(217, 54%, 11%);
+$card-color-desktop: hsl(216, 50%, 16%);
+$background-tablet: hsl(217, 53%, 22%);
+$card-color-tablet: hsl(216, 43%, 29%);
+$background-mobile: hsl(217, 52%, 42%);
+$card-color-mobile: hsl(216, 44%, 46%);
+
+
+// mixins- align center, breakpoints, card shadow and button effect(glass)
+@mixin align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin devices ($breakpoint) {
+    @if $breakpoint==tablet {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==mobile {
+        @media only screen and (max-width: 481px) {
+            @content;
+        }
+    }
+}
+
+@mixin glass-effect {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: none;
+}
+
+@mixin card-shadow {
+
+}
